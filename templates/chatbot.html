@@ -124,6 +124,7 @@
 
         .chat-header {
         text-align: center;
+        color: #ffffff;
         margin-top: 50px; /* Adjust margin as needed */
         position: relative;
         width: 100%;
@@ -163,7 +164,7 @@
                 background-color: #1d2634;
             }
         }
-        
+
     </style>
 
     <link rel="stylesheet" href="/static/css/dashboardstyle.css">
@@ -172,18 +173,19 @@
     <div class="grid-container">
 
       <!-- Header -->
-<!--      <header class="header">-->
-<!--        <div class="menu-icon" onclick="openSidebar()">-->
-<!--          <span class="material-icons-outlined">menu</span>-->
-<!--        </div>-->
-<!--        <div class="header-left">-->
-<!--        </div>-->
-<!--        <div class="header-right">-->
-<!--          <span class="material-icons-outlined">notifications</span>-->
-<!--          <span class="material-icons-outlined">email</span>-->
-<!--          <span class="material-icons-outlined">account_circle</span>-->
-<!--        </div>-->
-<!--      </header>-->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <!-- <span class="material-icons-outlined">search</span> -->
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
       <!-- End Header -->
 
       <!-- Sidebar -->
@@ -205,12 +207,12 @@
             <a id="sufo"  href="/upload" >
               <span class="material-icons-outlined">add</span> Upload new file
             </a>
-            
+
             <!-- <button onclick="uploadFile()" class="btn-contact sm-hidden menu_right" type="submit">Analyze</button> -->
           </li>
-          
+
           <li class="sidebar-list-item">
-            <a href="/tracker" >
+            <a href="#" >
               <span class="material-icons-outlined">bolt</span> Tracker
             </a>
           </li>
@@ -219,11 +221,11 @@
               <span class="material-icons-outlined">settings_accessibility</span> AI Suggestion
             </a>
           </li>
-        
-          
+
+
         </ul>
       </aside>
-      
+
 
       <div class="chat-container">
         <div class="chat-header">
@@ -239,12 +241,12 @@
             <div class="prompt" onclick="selectPrompt('Can you provide suggestions on how to manage my expenses better in each category considering my income?')">Suggestions</div>
             <div class="prompt" onclick="selectPrompt('I need advice on how to budget effectively for different expenses based on my monthly earnings. What do you recommend?')">Efficient Budgeting</div>
             <div class="prompt" onclick="selectPrompt(' How can I prioritize my spending in various categories to ensure I am making the best use of my income?')">Spendings</div>
-            <div class="prompt" onclick="selectPrompt('What percentage of my income should I ideally allocate to different expense categories to achieve financial balance?')">Finances</div>
+            <div class="prompt" onclick="selectPrompt('What percentage of my income should I ideally allocate to different expense categories to achieve financial balance?')">Finances</div>
         </div>
     </div>
-        
+
       </main>
-      
+
       <!-- End Main -->
 
     </div>
@@ -259,6 +261,12 @@
   <!-- <script src="/static/js/dashboardscript.js"></script> -->
 
   <script>
+
+      const ce = "Strategies to Efficiently Allocate Expenses\n\n1. Track your expenses: Use a budgeting app, spreadsheet, or simply write down everything you spend for a month. This will help you see where your money is going and identify areas where you can cut back.\n\n2. Create a budget: Once you know where your money is going, you can create a budget that allocates your income to different categories, such as housing, food, transportation, and entertainment. Be sure to include both fixed expenses (those that stay the same each month) and variable expenses (those that fluctuate).\n\n3. Prioritize your expenses: Decide which expenses are most important to you and allocate more of your budget to those categories. For example, if you value travel, you may want to allocate more money to that category than to entertainment.\n\n4. Negotiate your bills: Contact your service providers (e.g., cell phone, internet, insurance) and see if you can negotiate a lower rate. You may also be able to get discounts by bundling services or signing up for automatic payments.\n\n5. Cut back on unnecessary expenses: Take a close look at your variable expenses and see where you can cut back. For example, you could eat out less often, cancel unused subscriptions, or switch to a cheaper cell phone plan.\n\n6. Increase your income: If you're struggling to make ends meet, consider ways to increase your income. This could involve getting a part-time job, starting a side hustle, or asking for a raise at work.\n\n7. Seek professional help: If you're struggling to manage your expenses on your own, consider seeking help from a financial advisor or credit counselor. They can help you create a budget, negotiate your bills, and develop a plan to get out of debt.\n\nAdditional tips for allocating your expenses:\n\n Use the 50/30/20 rule: Allocate 50% of your income to needs (e.g., housing, food, transportation), 30% to wants (e.g., entertainment, dining out), and 20% to savings and debt repayment.\n Set financial goals: Having specific financial goals will help you stay motivated and make better decisions about how to allocate your money.\n Review your budget regularly: Your budget should be a living document that you review and adjust as needed. As your income and expenses change, you'll need to make sure your budget is still aligned with your financial goals.\n\nBy following these strategies, you can efficiently allocate your expenses and reach your financial goals faster."
+      const eb = "How to Budget Effectively for Different Expenses\n\n1. Track your expenses: Use a budgeting app, spreadsheet, or simply write down everything you spend for a month. This will help you see where your money is going and identify areas where you can cut back.\n\n2. Categorize your expenses: Once you have tracked your expenses, categorize them into different groups, such as housing, food, transportation, and entertainment. This will help you see how much you are spending in each category and identify areas where you can save money.\n\n3. Set financial goals: Having specific financial goals will help you stay motivated and make better decisions about how to allocate your money. For example, you may want to save for a down payment on a house, retire early, or pay off debt.\n\n4. Create a budget: Once you know your financial goals and have categorized your expenses, you can create a budget that allocates your income to different categories. Be sure to include both fixed expenses (those that stay the same each month) and variable expenses (those that fluctuate).\n\n5. Stick to your budget: The most important part of budgeting is sticking to it. This means tracking your expenses regularly and making adjustments as needed. If you find yourself overspending in a certain category, you may need to cut back in other areas.\n\nHere are some additional tips for budgeting effectively:\n\n Use the 50/30/20 rule: Allocate 50% of your income to needs (e.g., housing, food, transportation), 30% to wants (e.g., entertainment, dining out), and 20% to savings and debt repayment.\n Automate your savings: Set up automatic transfers from your checking account to your savings account each month. This will help you save money without having to think about it.\n Review your budget regularly: Your budget should be a living document that you review and adjust as needed. As your income and expenses change, you'll need to make sure your budget is still aligned with your financial goals.\n\nBased on your monthly earnings, here is a suggested budget:\n\n Needs (50%): $10,000\n     Housing: $2,500\n     Food: $2,000\n     Transportation: $1,500\n     Utilities: $1,000\n     Other: $3,000\n Wants (30%): $6,000\n     Entertainment: $1,000\n     Dining out: $1,000\n     Travel: $1,000\n     Shopping: $1,000\n     Other: $2,000\n Savings and debt repayment (20%): $4,000\n     Emergency fund: $1,000\n     Retirement: $1,000\n     Debt repayment: $2,000\n\nThis is just a suggested budget, and you may need to adjust it based on your individual circumstances and financial goals. Be sure to track your expenses regularly and make adjustments as needed."
+      const su = "Suggestions on How to Manage Expenses Better in Each Category\n\nBills:\n\n Negotiate your bills: Contact your service providers (e.g., cell phone, internet, insurance) and see if you can negotiate a lower rate. You may also be able to get discounts by bundling services or signing up for automatic payments.\n Reduce your energy consumption: Turn off lights when you leave a room, unplug electronics when you're not using them, and weatherize your home to reduce heating and cooling costs.\n Shop around for insurance: Get quotes from multiple insurance companies to make sure you're getting the best rate on your home, auto, and health insurance.\n\nCar:\n\n Drive less: Walk, bike, or take public transportation whenever possible. This will save you money on gas and car maintenance.\n Maintain your car: Regular maintenance can help prevent costly repairs down the road. Follow the manufacturer's recommended maintenance schedule and get your car inspected regularly.\n Consider a more fuel-efficient car: If you're in the market for a new car, consider a more fuel-efficient model. This will save you money on gas in the long run.\n\nClothes:\n\n Shop at thrift stores: You can find great deals on clothes at thrift stores. Just be sure to inspect the clothes carefully before you buy them.\n Buy clothes on sale: Many stores offer sales on clothes throughout the year. Take advantage of these sales to save money on your wardrobe.\n Borrow clothes from friends: If you need a special outfit for a special occasion, see if you can borrow something from a friend.\n\nCollege works:\n\n Apply for scholarships: There are many scholarships available to help students pay for college. Do some research to find scholarships that you qualify for and apply for as many as you can.\n Get a part-time job: A part-time job can help you offset the cost of college. Just be sure to choose a job that doesn't interfere with your studies.\n Take advantage of student discounts: Many businesses offer discounts to students. Be sure to ask for a student discount whenever you make a purchase.\n\nCommunications:\n\n Switch to a cheaper cell phone plan: There are many cell phone plans available that offer unlimited talk and text for a low monthly price. Shop around to find a plan that fits your needs and budget.\n Use a VoIP service: VoIP services, such as Skype and Google Voice, allow you to make free or low-cost calls over the internet. This can be a great way to save money on your phone bill.\n Cancel unnecessary subscriptions: Do you really need all of those streaming services? Take a close look at your subscriptions and cancel any that you don't use regularly.\n\nDeposits:\n\n Shop around for a better interest rate: Interest rates on deposits vary from bank to bank. Shop around to find a bank that offers a competitive interest rate on deposits.\n Make regular deposits: The more money you deposit into your account, the more interest you will earn. Make regular deposits, even if it's just a small amount.\n Consider a high-yield savings account: High-yield savings accounts offer higher interest rates than traditional savings accounts. This can be a great way to earn more interest on your money.\n\nEating out:\n\n Cook more meals at home: Eating out can be expensive. Save money by cooking more meals at home. You can find many easy and affordable recipes online.\n Take advantage of coupons and discounts: Many restaurants offer coupons and discounts on their meals. Take advantage of these offers to save money on your next meal out.\n Eat out during off-peak hours: Restaurants are often less crowded during off-peak hours, such as early in the week or late at night. This can help you save money on your meal.\n\nEntertainment:\n\n Take advantage of free activities: There are many free activities available in most communities, such as concerts in the park, museum exhibits, and hiking trails. Take advantage of these free activities to save money on entertainment.\n Get a library card: Libraries offer a wide variety of free entertainment options, such as books, movies, and music. Get a library card and start saving money on entertainment.\n Consider a subscription service: Subscription services, such as Netflix and Hulu, offer a wide variety of movies and TV shows for a low monthly price. This can be a great way to save money on entertainment.\n\nFood:\n\n Plan your meals: Planning your meals ahead of time can help you save money on food. This will help you avoid impulse purchases at the grocery store.\n Buy in bulk: Buying in bulk can save you money on food. Just be sure to only buy items that you will actually use.\n Use coupons and discounts: Many grocery stores offer coupons and discounts on their products. Take advantage of these offers to save money on your groceries.\n\nFriends:\n\n Spend time with friends who don't spend money: If you're trying to save money, it's important to spend time with friends who don't spend money. This will help you avoid temptation.\n Suggest free or low-cost activities: When you're planning activities with friends, suggest free or low-cost activities, such as going for a walk, playing a game, or having a picnic.\n Offer to host gatherings at your place: Hosting gatherings at your place can help you save money on food and drinks.\n\nGifts:\n\n Make your own gifts: Making your own gifts can be a great way to save money. There are many easy and affordable DIY gift ideas available online.\n Shop at thrift stores: You can find great deals on gifts at thrift stores. Just be sure to inspect the gifts carefully before you buy them.\n Give experiences instead of things: Experiences, such as tickets to a concert or a gift certificate for a massage, can be more meaningful than material gifts. And they can often be less expensive.\n\nGroceries:\n\n Plan your meals: Planning your meals ahead of time can help you save money on groceries. This will help you avoid impulse purchases at the grocery store.\n Buy in bulk: Buying in bulk can save you money on groceries. Just be sure to only buy items that you will actually use.\n Use coupons and discounts: Many grocery stores offer coupons and discounts on their products. Take advantage of these offers to save money on your groceries.\n\nHealth:\n\n Get regular checkups: Regular checkups can help you catch health problems early, when they're easier and less expensive to treat.\n Eat a healthy diet: Eating a healthy diet can help you stay healthy and avoid costly health problems down the road.\n Exercise regularly: Exercise can help you stay healthy and avoid costly health problems down the road.\n\nHouse:\n\n Make your own repairs: If you're handy, you can save money by making your own repairs around the house. There are many DIY home repair tutorials available online.\n Shop around for home insurance: Get quotes from multiple home insurance companies to make sure you're getting the best rate on your home insurance.\n Consider a home warranty: A home warranty can help you save money on unexpected repairs around the house.\n\nMiscellaneous:\n\n Track your expenses: Tracking your expenses can help you identify areas where you can cut back.\n Set financial goals: Having specific financial goals will help you stay motivated and make better decisions about how to spend your money.\n Create a budget: A budget will help you track your income and expenses and make sure that you're not spending more than you earn.\n\nPetrol:\n\n Drive less: Walk, bike, or take public transportation whenever possible. This will save you money on gas.\n Maintain your car: Regular maintenance can help prevent costly repairs down the road. Follow the manufacturer's recommended maintenance schedule and get your car inspected regularly.\n Consider a more fuel-efficient car: If you're in the market for a new car, consider a more fuel-efficient model. This will save you money on gas in the long run.\n\nSports:\n\n Join a recreational sports league: Joining a recreational sports league can be a great way to get exercise and have fun without spending a lot of money.\n Take advantage of free or low-cost activities: Many communities offer free or low-cost sports activities, such as pickup basketball games and hiking trails. Take advantage of these activities to save money on sports.\n Consider a gym membership: A gym membership can be a great way to get exercise and stay healthy. However, gym memberships can be expensive. If you're on a tight budget, consider joining a gym that offers a low monthly rate or that has a sliding scale based on income.\n\nToiletry:\n\n Buy in bulk: Buying toiletries in bulk can save you money. Just be sure to only buy items that you will actually use.\n Use coupons and discounts: Many stores offer coupons and discounts on toiletries. Take advantage of these offers to save money on your toiletries.\n Make your own toiletries"
+      const sp = "How to Prioritize Spending in Various Categories\n\n1. Needs vs. Wants\n\nThe first step in prioritizing your spending is to divide your expenses into two categories: needs and wants. Needs are essential expenses that you must pay in order to survive, such as housing, food, and transportation. Wants are non-essential expenses that you can live without, such as entertainment and dining out.\n\n2. Fixed vs. Variable Expenses\n\nOnce you have divided your expenses into needs and wants, you need to further divide them into fixed and variable expenses. Fixed expenses are those that stay the same each month, such as rent or mortgage payments, car payments, and insurance premiums. Variable expenses are those that fluctuate from month to month, such as groceries, gas, and entertainment.\n\n3. Prioritize Your Needs\n\nYour first priority should be to make sure that you are meeting your basic needs. This means paying your rent or mortgage, buying groceries, and paying for transportation. If you are struggling to meet your basic needs, you may need to cut back on your wants or find ways to increase your income.\n\n4. Pay Off Debt\n\nIf you have any outstanding debts, such as credit card debt or student loans, you should make paying them off a priority. Debt can be a huge financial burden, and it can prevent you from reaching your financial goals.\n\n5. Save for the Future\n\nOnce you have met your basic needs and paid off your debts, you should start saving for the future. This includes saving for retirement, emergencies, and other long-term goals.\n\n6. Enjoy Your Money\n\nOnce you have taken care of your needs, paid off your debts, and saved for the future, you can start spending money on things that you enjoy. However, it is important to budget for these expenses and make sure that you are not overspending.\n\nHere is a suggested prioritization of your spending:\n\n1. Needs:\n     Housing\n     Food\n     Transportation\n     Healthcare\n     Clothing\n\n2. Wants:\n     Entertainment\n     Dining out\n     Travel\n     Shopping\n\n3. Savings:\n     Retirement\n     Emergency fund\n     Other long-term goals\n\n4. Debt repayment:\n     Credit card debt\n     Student loans\n     Other debts\n\n5. Miscellaneous:\n     Gifts\n     Personal care\n     Hobbies\n\nThis is just a suggested prioritization, and you may need to adjust it based on your individual circumstances and financial goals. It is important to track your expenses and make sure that you are sticking to your budget."
+      const fi = "Percentage of Income to Allocate to Different Expenses\n\nThere is no one-size-fits-all answer to the question of how much of your income you should allocate to different expenses. The ideal budget will vary depending on your individual circumstances, such as your income, family size, and financial goals. However, there are some general guidelines that you can follow.\n\nNeeds:\n\n Housing: 25-35%\n Food: 10-15%\n Transportation: 10-15%\n Healthcare: 5-10%\n Clothing: 5-10%\n\nWants:\n\n Entertainment: 5-10%\n Dining out: 5-10%\n Travel: 5-10%\n Shopping: 5-10%\n\nSavings:\n\n Retirement: 10-15%\n Emergency fund: 5-10%\n Other long-term goals: 5-10%\n\nDebt repayment:\n\n Credit card debt: As much as possible\n Student loans: As much as possible\n Other debts: As much as possible\n\nMiscellaneous:\n\n Gifts: 1-5%\n Personal care: 1-5%\n Hobbies: 1-5%\n\nBased on these guidelines, here is a suggested budget for someone with a monthly income of $5,000:\n\n Needs: $2,000-$2,500\n     Housing: $1,250-$1,750\n     Food: $500-$750\n     Transportation: $500-$750\n     Healthcare: $250-$500\n     Clothing: $250-$500\n Wants: $500-$1,000\n     Entertainment: $250-$500\n     Dining out: $250-$500\n     Travel: $250-$500\n     Shopping: $250-$500\n Savings: $500-$1,000\n     Retirement: $250-$500\n     Emergency fund: $250-$500\n     Other long-term goals: $250-$500\n Debt repayment: $500-$1,000\n     Credit card debt: As much as possible\n     Student loans: As much as possible\n     Other debts: As much as possible\n Miscellaneous: $250-$500\n     Gifts: $50-$250\n     Personal care: $50-$250\n     Hobbies: $50-$250\n\nAgain, this is just a suggested budget, and you may need to adjust it based on your individual circumstances and financial goals. It is important to track your expenses and make sure that you are sticking to your budget."
       function sendMessage() {
           var userInput = document.getElementById("user-input").value;
           if (userInput.trim() === "") return;
@@ -267,10 +275,11 @@
           // and receive a response from the chatbot backend.
           // For demonstration purposes, I'll just echo the user's input as the bot's response.
           setTimeout(function() {
-              displayMessage("BudgetBud AI is typing...", "BudgetBud AI");
+              displayMessage("BudgetBud AI is typing...", "Bot");
               setTimeout(function() {
-                  displayMessage("This is a placeholder response.", "BudgetBud AI");
-              }, 1000);
+
+                  displayMessage(ce, "Bot");
+              }, 2000);
           }, 500);
           document.getElementById("user-input").value = "";
       }
